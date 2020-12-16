@@ -612,8 +612,13 @@ a:focus {
 
 
 
+
 .has-error{
   border-color: var(--global-color-error);
+}
+
+.has-error::placeholder{
+color: var(--global-color-error);
 }
 
 .c-error-message{

@@ -49,7 +49,7 @@ const enableListeners = function() {
         if(isEmpty(email.input.value)) {
             addErrors(email.input, email.errorMessage, "This field is required");
         } else {
-            removeErrors(email.input,email.errorMessage);
+            removeErrors(email.input, email.errorMessage);
         }
     });
 
