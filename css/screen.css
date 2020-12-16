@@ -231,7 +231,6 @@ a:focus {
 
 .o-row {
   position: relative;
-  padding-top: 2rem;
 }
 
 .o-row--login {
@@ -275,7 +274,6 @@ a:focus {
   margin-right: auto;
   max-width: 21rem; /* 79.5 * 16px = 1272 */
   width: 100%;
-  min-height: 40rem;
 }
 
 /*
@@ -480,120 +478,7 @@ a:focus {
     Website main background
 */
 
-.c-box{
-  background-image: url("../img/png/stary_sky.png");
-  background-repeat: repeat-y  repeat-x;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  
 
-  margin-top: none;
-
-  border: solid;
-  border-width: var(--global-border-width);
-  border-color: var(--global-color-alpha-light);
-  border-radius: var(--global-border-radius);
-
-  box-shadow: var(--global-box-shadow);
-
-
-  
-}
-
-
-
-/*
-    Component: Logo
-    ---
-    Website main logo
-*/
-
-.c-header {
-  background-color: var(--global-color-neutral-dark);
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
-  text-align: center;
-}
-
-
-.c-moon_text {
-  font-size: 1.2rem;
-  background-color: var(--global-color-neutral-dark);
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.u-align {
-margin: 0;
-display: inline;
-
-}
-
-.c-moon {
-  min-height: 12.5rem;
-  
-  padding-top: 0.5rem;
-  display: block;
-  max-width: 8rem ;
-  margin: auto;
-  margin-bottom: 2rem;
-  background-color: var(--global-color-neutral-dark);
-  
-  animation: slight-hover infinite 2.5s forwards ease-in-out;
-
-}
-
-.c-next_moon{
-  animation: scale-in 700ms forwards cubic-bezier(0.63, 0.15, 0.38, 1.24);
-}
-
-@keyframes slight-hover {
-  0% {
-    transform: translateY(0%);
-  }
-  50%{
-    transform: translateY(3%);
-
-  }
-  100% {
-    transform: translateY(0%);
-  }
-
-}
-
-@keyframes scale-in {
-  0% {
-    transform: scale(0)
-  }
-  100%{
-    transform: scale(1)
-  }
-}
-
-
-.c-info_box {
-  display: block;
-  margin: auto;
-
-  text-align: center;
-
-  font-family: inherit;
-
-  font-size: .9rem;
-
-  background-color: var(--global-color-neutral-dark);
-
-  border: solid;
-  border-width: var(--global-border-width);
-  border-color: var(--global-border-color);
-  border-radius: var(--global-border-radius);
-
-  max-width: 13rem;
-  padding: 0.5rem;
-
-  margin-bottom: 2rem;
-
-}
 
 /*
     Component: Card
@@ -640,24 +525,7 @@ display: inline;
 */
 
 .c-button {
-  display: block;
-  margin: auto;
-  width: 10.5rem;
 
-
-
-  font-family: inherit;
-  font-size: 1.1rem;
-
-  background-color: var(--global-color-alpha-light);
-  color: var(--global-color-neutral-dark);
-
-  border: var(--global-border-width) solid transparent;
-  border-radius: var(--global-button-border-radius);
-
-  padding: 1.5rem 2rem;
-
-  outline: none;
 
 }
 
@@ -675,28 +543,6 @@ display: inline;
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
-
-/* Moon utilities */
-
-.u-cookie {
-color: #935C00;
-}
-
-.u-briefcase {
-  color:#BC8E41;
-}
-
-.u-melon {
-  color: #FF6565;
-}
-
-.u-smile {
-  color: #FFFF6F;
-}
-
-.u-calzone{
-  color: #F80909;
-}
 
 
 
