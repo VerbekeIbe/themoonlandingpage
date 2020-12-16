@@ -40,6 +40,8 @@
   --global-color-alpha-light: #9dacff;
   --global-color-yellow: #fbf49b;
 
+
+  --global-color-error: #FF1919;
   /* fonts  */
 
   /* shadows */
@@ -606,7 +608,18 @@ a:focus {
 .c-input:active {
   outline: none;
   box-shadow: var(--global-box-shadow);
+}
 
+
+
+.has-error{
+  border-color: var(--global-color-error);
+}
+
+.c-error-message{
+  color: var(--global-color-error);
+  font-size: .8rem ;
+  margin-bottom: .5rem;
 }
 
 
