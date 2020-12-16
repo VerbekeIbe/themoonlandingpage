@@ -275,6 +275,7 @@ a:focus {
   margin-right: auto;
   max-width: 72rem; /* 79.5 * 16px = 1272 */
   width: 100%;
+  
 }
 
 /*
@@ -476,6 +477,7 @@ a:focus {
 .grid-container {
   display: grid;
   grid-template-columns: 40rem 25rem;
+  grid-template-rows: 12rem 15rem 15rem;
   /* grid-row-gap: 2rem;
   grid-column-gap: 2rem; */
 }
@@ -503,7 +505,43 @@ a:focus {
 }
 
 
+@media (max-width: 996px){
 
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 40rem;
+    grid-template-rows: auto;
+    /* grid-row-gap: 2rem;
+    grid-column-gap: 2rem; */
+  }
+
+  .grid-item-1{
+    margin: auto;
+    grid-column:1;
+    grid-row: 1;
+    max-height: 10rem;
+    text-align: center;
+  }
+  .grid-item-2{
+    margin: auto;
+    grid-column:1;
+    grid-row: 2;
+    text-align: center;
+  }
+  .grid-item-3{
+    margin: auto;
+    grid-column:1;
+    grid-row: 3;
+  }
+  .grid-item-4 {
+    margin: auto;
+    grid-column:1;
+    grid-row: 4;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
 
 
 
@@ -562,6 +600,7 @@ a:focus {
   box-shadow: var(--global-box-shadow);
 
 }
+
 
 /*
     Component: Label
