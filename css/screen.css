@@ -231,6 +231,7 @@ a:focus {
 
 .o-row {
   position: relative;
+  margin-top: 3rem;
 }
 
 .o-row--login {
@@ -272,7 +273,7 @@ a:focus {
 .o-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 21rem; /* 79.5 * 16px = 1272 */
+  max-width: 72rem; /* 79.5 * 16px = 1272 */
   width: 100%;
 }
 
@@ -469,6 +470,45 @@ a:focus {
 }
 
 /*------------------------------------*\
+#GRID
+\*------------------------------------*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40rem 25rem;
+  /* grid-row-gap: 2rem;
+  grid-column-gap: 2rem; */
+}
+
+.grid-item-1{
+  margin: auto;
+  grid-column:1;
+  max-height: 10rem;
+  text-align: center;
+}
+.grid-item-2{
+  margin: auto;
+  grid-column:1;
+  text-align: center;
+}
+.grid-item-3{
+  margin: auto;
+  grid-column:2;
+  grid-row: 1/4;
+}
+.grid-item-4 {
+  margin: auto;
+  grid-column:1;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
 #COMPONENTS
 \*------------------------------------*/
 
@@ -499,9 +539,28 @@ a:focus {
 */
 
 .c-input {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  font-family: inherit;
+  border: var(--global-border-width) solid;
+  border-radius: var(--global-border-radius);
+
+  color: var(--global-color-neutral-light);
+
+  border-color: var(--global-color-neutral-light);
+  background-color: var(--global-color-neutral-dark);
+  ;
+}
+.c-input:hover {
+  box-shadow: var(--global-box-shadow);
 }
 
-.c-input:focus {
+.c-input:focus
+.c-input:active {
+  outline: none;
+  box-shadow: var(--global-box-shadow);
+
 }
 
 /*
@@ -525,8 +584,10 @@ a:focus {
 */
 
 .c-button {
+  margin: auto;
   display: block;
-  width: 10.5rem;
+  width: 8rem;
+  padding: 1rem;
 
 
 
@@ -551,6 +612,11 @@ a:focus {
   box-shadow: var(--global-box-shadow);
   background-color: var(--global-color-alpha-light);
 }
+.c-button:focus {
+  outline: none;
+  box-shadow: var(--global-box-shadow);
+  background-color: var(--global-color-alpha-light);
+ 
 
 /*------------------------------------*\
 #UTILITIES
@@ -619,11 +685,11 @@ a:focus {
 */
 
 .u-max-width-xs {
-  max-width: 27em !important;
+  max-width: 20rem !important;
 }
 
 .u-max-width-sm {
-  max-width: 39em !important;
+  max-width: 25rem !important;
 }
 
 .u-max-width-md {
