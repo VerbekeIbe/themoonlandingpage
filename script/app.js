@@ -1,6 +1,5 @@
 
    let email = {};
-   let signInButton = {};
 
 
 // Helper Functions
@@ -16,17 +15,13 @@ const isEmpty = function(fieldValue) {
 };
 
 
-
-
-
-
 const getDOMElements = function (){
 
    email.input = document.querySelector('.js-email-input');
    email.errorMessage = document.querySelector('.js-email-error-message');
    console.log(email);
 
-   signInButton = document.querySelector('.js-sign-in-button')
+
 }
 
 
@@ -39,6 +34,15 @@ const addErrors = function(formField, errorField, errorMessage) {
 const removeErrors = function(formField,errorField) {
     formField.classList.remove('has-error');
     errorField.style.display = 'none'
+};
+
+const doubleCheckEmailAdress = function() {
+    if(!isEmpty(email.input.value) && isValidEmailAddress(email.input.value)){
+        removeErrors(email.input, email.errorMessage);
+        email.input.removeEventListener('input', doubleCheckEmailAdress);
+    } else {
+        addErrors(email.input, email.errorMessage, "invalid email adress");
+    }
 }
 
 
@@ -46,16 +50,19 @@ const removeErrors = function(formField,errorField) {
 const enableListeners = function() {
 
     email.input.addEventListener('blur', function(){
-        if(isEmpty(email.input.value)) {
+        if(isEmpty(email.input.value) && !isValidEmailAddress(email.input.value)) {
             addErrors(email.input, email.errorMessage, "This field is required");
+
+            email.input.addEventListener('input', doubleCheckEmailAdress);
+
         } else {
-            removeErrors(email.input, email.errorMessage);
+            if (isEmpty(email.input.value)){
+                removeErrors(email.input, email.errorMessage);
+                email.input.removeEventListener('input', doubleCheckEmailAdress);
+            }
         }
     });
 
-    signInButton.addEventListener('click', function(){
-
-    });
 }
 
 
