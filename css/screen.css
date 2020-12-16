@@ -231,8 +231,7 @@ a:focus {
 
 .o-row {
   position: relative;
-  margin-top: 3rem;
-
+  margin-right: .5rem;
 }
 
 .o-row--login {
