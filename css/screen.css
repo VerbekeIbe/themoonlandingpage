@@ -525,6 +525,7 @@ a:focus {
     max-height: 10rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin-right: 2rem;
   }
   .grid-item-2{
     margin: auto;
@@ -532,6 +533,7 @@ a:focus {
     grid-row: 2;
     text-align: center;
     margin-bottom: 1rem;
+    margin-right: 2rem;
   }
   .grid-item-3{
     margin: auto;
@@ -546,6 +548,7 @@ a:focus {
     grid-row: 4;
     text-align: center;
     margin-bottom: 4rem;
+    margin-right: 2rem;
   }
 }
 
