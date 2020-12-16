@@ -232,6 +232,7 @@ a:focus {
 .o-row {
   position: relative;
   margin-top: 3rem;
+
 }
 
 .o-row--login {
@@ -476,7 +477,7 @@ a:focus {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 40rem 25rem;
+  grid-template-columns: 40rem 20rem;
   grid-template-rows: 12rem 15rem 15rem;
   /* grid-row-gap: 2rem;
   grid-column-gap: 2rem; */
@@ -509,8 +510,9 @@ a:focus {
 
 
   .grid-container {
+    margin:auto;
     display: grid;
-    grid-template-columns: 40rem;
+    grid-template-columns: 20rem;
     grid-template-rows: auto;
     /* grid-row-gap: 2rem;
     grid-column-gap: 2rem; */
@@ -522,17 +524,21 @@ a:focus {
     grid-row: 1;
     max-height: 10rem;
     text-align: center;
+    margin-bottom: 2rem;
   }
   .grid-item-2{
     margin: auto;
     grid-column:1;
     grid-row: 2;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .grid-item-3{
     margin: auto;
     grid-column:1;
     grid-row: 3;
+    max-width: 12rem;
+    margin-bottom: 2rem;
   }
   .grid-item-4 {
     margin: auto;
@@ -724,7 +730,7 @@ a:focus {
 */
 
 .u-max-width-xs {
-  max-width: 20rem !important;
+  max-width: 15rem !important;
 }
 
 .u-max-width-sm {
